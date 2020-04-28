@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{1E42D00E-CDBE-B18A-87E2-9AA41AE5C605}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resources/LastMon.txt">
+    <Files>
+      <File FileName="Assets/Scripts/Map Scripts/Player_Map.cs" Line="52" Column="31" />
+      <File FileName="Assets/Scripts/Battle Scripts/BattleMonHUD.cs" Line="138" Column="44" />
+      <File FileName="Assets/Scripts/Battle Scripts/BattleSystem.cs" Line="200" Column="10" />
+      <File FileName="Assets/Scripts/Battle Scripts/Unit.cs" Line="37" Column="27" />
+      <File FileName="Assets/Scripts/Map Scripts/MonsterPrefabs.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/SceneLoaderScript.cs" Line="9" Column="22" />
+      <File FileName="Assets/Scripts/Map Scripts/HUD.cs" Line="367" Column="30" />
+      <File FileName="Assets/Scripts/TextFileManager.cs" Line="137" Column="59" />
+      <File FileName="Assets/Scripts/MonSave.cs" Line="244" Column="44" NotebookId="1" />
+      <File FileName="Assets/Resources/LastMon.txt" Line="4" Column="1" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2981f578-18cf-4c1d-9002-4e49fc011e46" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
