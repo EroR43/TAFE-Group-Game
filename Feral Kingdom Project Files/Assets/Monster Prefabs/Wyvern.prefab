@@ -879,16 +879,16 @@ MonoBehaviour:
   unitName: Wyvern
   unitLevel: 5
   baseHealth: 46
-  maxHP: 0
-  currentHP: 0
+  maxHP: 230
+  currentHP: 230
   baseArmor: 48
-  currentArmor: 0
+  currentArmor: 240
   baseDamage: 16
-  currentDamage: 0
-  maxEXP: 0
+  currentDamage: 80
+  maxEXP: 500
   currentEXP: 0
   baseHealAmnt: 10
-  currentHealAmnt: 0
+  currentHealAmnt: 50
   monIndex: 3
   reader: {fileID: 0}
   mon: {fileID: 0}

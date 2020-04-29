@@ -48,16 +48,16 @@ MonoBehaviour:
   unitName: Sword
   unitLevel: 5
   baseHealth: 42
-  maxHP: 0
-  currentHP: 0
+  maxHP: 210
+  currentHP: 210
   baseArmor: 45
-  currentArmor: 0
+  currentArmor: 225
   baseDamage: 25
-  currentDamage: 0
-  maxEXP: 0
+  currentDamage: 125
+  maxEXP: 500
   currentEXP: 0
   baseHealAmnt: 10
-  currentHealAmnt: 0
+  currentHealAmnt: 50
   monIndex: 2
   reader: {fileID: 0}
   mon: {fileID: 0}

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Author: Eric Hanks
+// Last Edited: 29/04/2020
+
 public class Cam : MonoBehaviour
 {
     //Variables

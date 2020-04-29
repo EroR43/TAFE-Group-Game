@@ -3,45 +3,83 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-//Author: Eric Hanks. Last Updated: 28/02/2020
-//Made following Brackeys youtube tutorial for turn based combat:https://www.youtube.com/watch?v=_1pz_ohupPs&t=455s
+// Author: Eric Hanks. Last Updated: 29/04/2020
+// Made following Brackeys youtube tutorial for turn based combat:https://www.youtube.com/watch?v=_1pz_ohupPs&t=455s
+
+// These allow actions to only happen during the times you want them to happen.
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST, RUN }
 
 public class BattleSystem : MonoBehaviour
 {
+    // These Vector 3's are used to correct the Instantiate location of the enemy and player gameobjects in the scene.
     public Vector3 spawnOffset;
     public Vector3 spawnRotPlayer;
     public Vector3 spawnRotEnemy;
 
+    // These gameobjects are the objects that are spawned in with the Unit class as either the player or enemy.
     public GameObject playerPrefab;
     public GameObject enemyPrefab;
 
+    // These transforms are the platforms within the scene that the player and enemy objects are instantiated to, these allow us to instantiate the object in the correct location with the correct scale and rotation.
     public Transform playerBattleStation;
     public Transform enemyBattleStation;
 
+    // refrences to the Unit class, these are seperated into the playerUnit and enemyUnit, each instances of these being components of the player and enemy game objects.
     public Unit playerUnit;
     public Unit enemyUnit;
 
+    /// <summary>
+    /// Unity Text component to be used as a description what is occuring or what the player should do.
+    /// </summary>
     public Text dialogueText;
+    /// <summary>
+    /// Unity Text component to be used to display the current amount of chains that the player has.
+    /// </summary>
     public Text chainText;
+    /// <summary>
+    /// A canvas group used to show and hide the players action buttons to act as an extra prevention of stopping the player from doing things when they shouldn't.
+    /// </summary>
     public CanvasGroup buttons;
+    /// <summary>
+    /// Canvas group to show and hide the item UI.
+    /// </summary>
     public CanvasGroup items;
 
+    /// <summary>
+    /// refrence to the player battle UI make use of functions and variables from the class.
+    /// </summary>
     public PlayerBattleHUD playerHUD;
+    /// <summary>
+    /// refrence to the enemy battle UI make use of functions and variables from the class.
+    /// </summary>
     public EnemyBattleHUD enemyHUD;
+    /// <summary>
+    /// refrence to the Monster Selection hud, allows the use of the class's functions and to show and hide the UI.
+    /// </summary>
     public BattleMonHUD monHUD;
 
+    /// <summary>
+    /// Refrence for the MonSave class, to use classes functions.
+    /// </summary>
     public MonSave monSave;
 
+    /// <summary>
+    /// int to be used for selecting the level range for the enemies.
+    /// </summary>
     public int stageNum;
 
+    /// <summary>
+    /// this allows us to set and refrence the state of the game.
+    /// </summary>
     public BattleState state;
 
+    /* Finds the MonSave game object within the game scene and sets the monSave field to refrence the MonSave class component, sets the playerPrefab to refrence the currPrefab gameobject within the MonSave class,
+     * and sets the enemyPrefab to the return from the MonSave.prefabs EnemyMon function */
     private void Awake()
     {
         monSave = GameObject.Find("MonSave(Clone)").GetComponent<MonSave>();
-        playerPrefab = monSave.prefab;
-        enemyPrefab = monSave.mon.EnemyMon();
+        playerPrefab = monSave.currPrefab;
+        enemyPrefab = monSave.prefabs.EnemyMon();
     }
 
     void Start()
@@ -259,7 +297,7 @@ public class BattleSystem : MonoBehaviour
     public IEnumerator LoadNewPlayer()
     {
         Destroy(playerUnit.gameObject);
-        playerPrefab = monSave.prefab;
+        playerPrefab = monSave.currPrefab;
         GameObject playerGO = Instantiate(playerPrefab, playerBattleStation.transform.position + spawnOffset, playerPrefab.transform.rotation);
         playerGO.transform.eulerAngles = spawnRotPlayer;
         playerGO.transform.SetParent(playerBattleStation);

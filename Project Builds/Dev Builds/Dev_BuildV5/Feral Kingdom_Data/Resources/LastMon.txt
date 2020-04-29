@@ -1,0 +1,16 @@
+LastMon
+Time Stamp: 28/04/2020 1:15:37 PM - Index Number,2
+Time Stamp: 28/04/2020 1:15:37 PM - Chain Count,6
+Time Stamp: 28/04/2020 1:15:33 PM - Name,Sword
+Time Stamp: 28/04/2020 1:15:33 PM - Level,5
+Time Stamp: 28/04/2020 1:15:33 PM - Base Health,42
+Time Stamp: 28/04/2020 1:15:33 PM - Max HP,210
+Time Stamp: 28/04/2020 1:15:33 PM - Current HP,210
+Time Stamp: 28/04/2020 1:15:33 PM - Base Armor,45
+Time Stamp: 28/04/2020 1:15:33 PM - Current Armor,225
+Time Stamp: 28/04/2020 1:15:33 PM - Max EXP,500
+Time Stamp: 28/04/2020 1:15:33 PM - Current EXP,0
+Time Stamp: 28/04/2020 1:15:33 PM - Base Damage,25
+Time Stamp: 28/04/2020 1:15:33 PM - Current Damage,125
+Time Stamp: 28/04/2020 1:15:33 PM - Base Heal Amount,10
+Time Stamp: 28/04/2020 1:15:33 PM - Current Heal Amount,50

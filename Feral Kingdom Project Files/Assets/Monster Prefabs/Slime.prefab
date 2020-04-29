@@ -48,16 +48,16 @@ MonoBehaviour:
   unitName: Slime
   unitLevel: 5
   baseHealth: 48
-  maxHP: 0
-  currentHP: 0
+  maxHP: 240
+  currentHP: 240
   baseArmor: 35
-  currentArmor: 0
+  currentArmor: 175
   baseDamage: 12
-  currentDamage: 0
-  maxEXP: 0
+  currentDamage: 60
+  maxEXP: 500
   currentEXP: 0
   baseHealAmnt: 25
-  currentHealAmnt: 0
+  currentHealAmnt: 125
   monIndex: 1
   reader: {fileID: 0}
   mon: {fileID: 0}

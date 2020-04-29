@@ -34,7 +34,6 @@ public class TextFileManager
         {
             Directory.CreateDirectory(Application.dataPath + "/Resources");
             File.WriteAllText(dirPath, fileName + "\n");
-
         }
     }
 
@@ -52,7 +51,6 @@ public class TextFileManager
         if (File.Exists(dirPath) == true)
         {
             tContents = File.ReadAllLines(dirPath);
-
         }
         logContents = tContents;
         return tContents;
