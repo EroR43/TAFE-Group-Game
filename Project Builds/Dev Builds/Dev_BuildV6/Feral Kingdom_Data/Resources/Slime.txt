@@ -1,0 +1,14 @@
+Slime
+Time Stamp: 4/05/2020 11:50:23 AM - Name,
+Time Stamp: 4/05/2020 11:50:23 AM - Level,0
+Time Stamp: 4/05/2020 11:50:23 AM - Base Health,0
+Time Stamp: 4/05/2020 11:50:23 AM - Max HP,0
+Time Stamp: 4/05/2020 11:50:23 AM - Current HP,0
+Time Stamp: 4/05/2020 11:50:23 AM - Base Armor,0
+Time Stamp: 4/05/2020 11:50:23 AM - Current Armor,0
+Time Stamp: 4/05/2020 11:50:23 AM - Max EXP,0
+Time Stamp: 4/05/2020 11:50:23 AM - Current EXP,0
+Time Stamp: 4/05/2020 11:50:23 AM - Base Damage,0
+Time Stamp: 4/05/2020 11:50:23 AM - Current Damage,0
+Time Stamp: 4/05/2020 11:50:23 AM - Base Heal Amount,0
+Time Stamp: 4/05/2020 11:50:23 AM - Current Heal Amount,0

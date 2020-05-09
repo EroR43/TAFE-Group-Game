@@ -1,0 +1,16 @@
+LastMon
+Time Stamp: 4/05/2020 11:52:04 AM - Index Number,0
+Time Stamp: 4/05/2020 11:52:04 AM - Chain Count,6
+Time Stamp: 4/05/2020 11:51:07 AM - Name,
+Time Stamp: 4/05/2020 11:51:07 AM - Level,0
+Time Stamp: 4/05/2020 11:51:07 AM - Base Health,0
+Time Stamp: 4/05/2020 11:51:07 AM - Max HP,0
+Time Stamp: 4/05/2020 11:51:07 AM - Current HP,0
+Time Stamp: 4/05/2020 11:51:07 AM - Base Armor,0
+Time Stamp: 4/05/2020 11:51:07 AM - Current Armor,0
+Time Stamp: 4/05/2020 11:51:07 AM - Max EXP,0
+Time Stamp: 4/05/2020 11:51:07 AM - Current EXP,0
+Time Stamp: 4/05/2020 11:51:07 AM - Base Damage,0
+Time Stamp: 4/05/2020 11:51:07 AM - Current Damage,0
+Time Stamp: 4/05/2020 11:51:07 AM - Base Heal Amount,0
+Time Stamp: 4/05/2020 11:51:07 AM - Current Heal Amount,0

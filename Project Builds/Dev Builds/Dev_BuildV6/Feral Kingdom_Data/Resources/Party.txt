@@ -1,0 +1,20 @@
+Party
+Time Stamp: 4/05/2020 11:52:03 AM - Slime is Caught,False
+Time Stamp: 4/05/2020 11:52:03 AM - Sword is Caught,False
+Time Stamp: 4/05/2020 11:52:03 AM - Wyvern is Caught,False
+Time Stamp: 4/05/2020 11:52:04 AM - Slime Alive: ,False
+Time Stamp: 4/05/2020 11:52:04 AM - Sword Alive: ,False
+Time Stamp: 4/05/2020 11:52:04 AM - Wyvern Alive: ,False
+Time Stamp: 4/05/2020 11:51:03 AM - Name,
+Time Stamp: 4/05/2020 11:51:03 AM - Level,0
+Time Stamp: 4/05/2020 11:51:03 AM - Base Health,0
+Time Stamp: 4/05/2020 11:51:03 AM - Max HP,0
+Time Stamp: 4/05/2020 11:51:03 AM - Current HP,0
+Time Stamp: 4/05/2020 11:51:03 AM - Base Armor,0
+Time Stamp: 4/05/2020 11:51:03 AM - Current Armor,0
+Time Stamp: 4/05/2020 11:51:03 AM - Max EXP,0
+Time Stamp: 4/05/2020 11:51:03 AM - Current EXP,0
+Time Stamp: 4/05/2020 11:51:03 AM - Base Damage,0
+Time Stamp: 4/05/2020 11:51:03 AM - Current Damage,0
+Time Stamp: 4/05/2020 11:51:03 AM - Base Heal Amount,0
+Time Stamp: 4/05/2020 11:51:03 AM - Current Heal Amount,0

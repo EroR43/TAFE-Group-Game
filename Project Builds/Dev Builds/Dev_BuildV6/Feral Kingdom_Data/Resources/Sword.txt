@@ -1,0 +1,14 @@
+Sword
+Time Stamp: 4/05/2020 11:51:55 AM - Name,
+Time Stamp: 4/05/2020 11:51:55 AM - Level,0
+Time Stamp: 4/05/2020 11:51:55 AM - Base Health,42
+Time Stamp: 4/05/2020 11:51:55 AM - Max HP,0
+Time Stamp: 4/05/2020 11:51:55 AM - Current HP,0
+Time Stamp: 4/05/2020 11:51:55 AM - Base Armor,45
+Time Stamp: 4/05/2020 11:51:55 AM - Current Armor,0
+Time Stamp: 4/05/2020 11:51:55 AM - Max EXP,0
+Time Stamp: 4/05/2020 11:51:55 AM - Current EXP,0
+Time Stamp: 4/05/2020 11:51:55 AM - Base Damage,25
+Time Stamp: 4/05/2020 11:51:55 AM - Current Damage,0
+Time Stamp: 4/05/2020 11:51:55 AM - Base Heal Amount,10
+Time Stamp: 4/05/2020 11:51:55 AM - Current Heal Amount,0
