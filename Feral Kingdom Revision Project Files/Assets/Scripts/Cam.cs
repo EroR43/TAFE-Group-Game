@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Author: Eric Hanks
-// Last Edited: 29/04/2020
+// Code from: https://www.youtube.com/playlist?list=PLMKGE-XmGjMTzNpssH84xJcQ35CXJeLLl by Sykoo
+// Last Edited: 30/04/2020
 
 public class Cam : MonoBehaviour
 {
