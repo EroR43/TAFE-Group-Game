@@ -26,9 +26,7 @@ public class HealNode : MonoBehaviour
         fader.Fade(!anim.GetBool("inTrigger"));
     }
 
-    /* while the player remains within the trigger, checks if the player presses the "E" key, 
-     * running the TakeDamage func in the return of the GetMonster func within the GameManager with a parameter of -50, 
-     * which acts to add health to the monster */
+    // Heals the player's monster when activated.
     public void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))

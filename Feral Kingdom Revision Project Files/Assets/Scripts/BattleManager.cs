@@ -62,14 +62,8 @@ public class BattleManager : MonoBehaviour
     }
 
 
-    /* This update function checks if the currTurn is set to anything, either the player or the enemy,
-     * then checking if the value of turnTimer is less than the value of currTurnTime, adding time to the turnTimer if it is.
-     * if it isn't, it is checked if it's currently the enemy's turn, 
-     * then checking if the value of the random damage between the enemy monster's max damage and min damage applied to the players monster,
-     * through the Monster class' TakeDamage func has caused the death of the player monster, printing "Player Dead" in the unity console and running the LoadWorld func of the GameManager with a false parameter,
-     * regardless of if the player is dead or not, the displayed text and slider display which displays the player monster's health,
-     * is set to the monsters current health using the GetCurrHP func of the Monster class, with the text showing the monsters max health as well, 
-     * then running the SwapTurns func at the end of the execution of this block */
+    /* Runs the timer for swapping turns and runs the functionality for the enemy to attack and kill the player.
+     * */
     void Update()
     {
         if (currTurn != null)
@@ -95,11 +89,7 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    /* checks if the currTurn is the players turn at the time that the func is run, if it is, 
-     * setting the turn to be the enemy monsters, setting the value of currTurnTime to be a random number 
-     * between half of turnTime and the turnTime and setting the turn text to display as the enemy's turn.
-     * if it is not the players turn when the func is run, currTurn will be set to the players, 
-     * the currTurnTime will be set to the normal turnTime, setting the turnTimer to be 0 and setting the turn text to diplay as the players turn*/
+    /* Swaps the current turn between the player and the enemy, with a random turn time for the enemy */
     void SwapTurns()
     {
         if (currTurn == playerMon)
@@ -119,22 +109,8 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    /* This function does the following:
-     * Regarding the player, 
-     * playerMon is set to refrence the return of the GetMonster func in the GameManager class, 
-     * playerObj is set to refrence the returned game object of the GetPlayerObject func in the GameManager class,
-     * a local GameObject of playerGO is set to be the Instantiated object of the playerObj with postioning on the playerBattleStation to look visually distinct,
-     * the eulerAngles transform of the playerGO is set to be value of spawnRotPlayer,
-     * playerGO is set to be a child of the playerBattleStation,
-     * Regarding the Enemy
-     * a local GameObject of enemyGO is set be the Instantiatied object of the enemyObj with postioning on the enemyBattleStation to look visually distinct,
-     * the eulerAngles tranform of the enemyGO is set to be the value of spawnRotEnemy,
-     * enemyGO is set to be a child of the enemyBattleStation gameObject,
-     * enemyMon is to be the Monster class component attached to the enemyGO,
-     * the SetCurrToMaxHP func in the Monster class of the enemyMon is run to make the enemy full health
-     * Regarding the UI displays,
-     * the various text displays are set to display the monsters information, name and health for both monsters.
-     * Then, at the end of the function, the currTurnTime is set to be the normal turnTime, the turn is set to be the players turn and the turnText display is updated to reflect this. */
+    /* Sets up the monsters and their displayed stats for the battle, 
+     * spawns in the monsters models and updates their health and name diplays with the correct info*/
 
     public void InitialiseBattle()
     {
@@ -164,14 +140,8 @@ public class BattleManager : MonoBehaviour
         turnText.text = "Player Turn";
     }
 
-    /* This function is run when the player presses the attack button and checks if it is currently the players turn, 
-     * checks if the random damage within the max and min damage of the player that is applied to the enemy monster through the TakeDamage func in the Monster class has killed it, 
-     * if it has, it checks if the GameManager class' battleNodeTable hastable contains the key of the current battle,  setting the value of the key to true if it is, 
-     * then prints "Enemy Dead" in the unity console and runs the LoadWorld func in the GameManager with a true parameter to define that the battle was won.
-     * if the damage wasn't enough to kill the enemy, "Enemy Alive" is printed to the unity console.
-     * At the end of whatever path that executed,
-     * displayed health of the enemy monster is updated with its new values 
-     * and the SwapTurns func is ran, ending the players turn */
+    /* Only runs on the players turn, implements the functions for the player to attack and kill the enemy, 
+     * update their displayed health and load the overworld when the battle is won */
     public void OnAttackButton()
     {
         if (currTurn == playerMon)

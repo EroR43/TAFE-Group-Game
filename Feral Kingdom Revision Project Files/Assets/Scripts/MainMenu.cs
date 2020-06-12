@@ -26,10 +26,7 @@ public class MainMenu : MonoBehaviour
     private int lastSceneIndex;
 
 
-    /* This Awake function Sets what the text of the control UI is displaying,
-    // Sets what the text of the tutorial UI is displaying,
-    // sets the selection panel to inactive, making it invisible and un-interactive,
-    // and sets the value of the lastSceneIndex to the value of the same variable in within the GameManager */
+    /* Sets the displayed text for the controlText and tutorialText, sets the selectionPanel to be disabled and sets lastSceneIndex to the GameManagers int of the same name. */
     private void Awake()
     {
         controlText.text = $"{"Movement: W,A,S,D"}\n{"Interact: E"}\n{"Pause Menu: Escape"}";

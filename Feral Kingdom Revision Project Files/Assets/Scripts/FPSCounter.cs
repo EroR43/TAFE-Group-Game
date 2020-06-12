@@ -17,10 +17,7 @@ public class FPSCounter : MonoBehaviour
     // Field to access the functionality of unity text component, used to display the current fps of the game in the ui.
     private Text m_Text;
 
-    /* at awake, checks if there is an fps counter present in the scene, 
-     * setting this to be the instance of the fps counter that will be used if no counter is present, 
-     * otherwise it destroys the script and gameobject that it is attached to.
-     * This prevents more than one fps counter to be present in the scene at any one time */
+    // Checks if this script is already present to destroy copies of the script.
     private void Awake()
     {
         if (instance == null)
@@ -40,11 +37,7 @@ public class FPSCounter : MonoBehaviour
         m_Text = GameObject.FindGameObjectWithTag("FPS").GetComponent<Text>();
     }
 
-    /* sets a local float of timelapse to be the Time.smoothDeltaTime, a smoothed version of deltaTime, which is the completion time since the last frame
-     * checks if the value is equal to or less than 0, if it is, setting timer to equal refresh, otherwise setting timer to equal the result of taking time
-     * Lapse from timer.checks if the value timer is equal to or less than 0, setting avgFramerate to equal the int value of 1f divided by the value timelaps
-     * esets the text of the m_Text ui to the string format of avgFramerate in the format of the display string */
-
+    // Displays the FPS of the game in the correct format
     private void Update()
     {
         //Change smoothDeltaTime to deltaTime or fixedDeltaTime to see the difference

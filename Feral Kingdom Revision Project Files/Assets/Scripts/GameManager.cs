@@ -54,9 +54,7 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Checks if the playerMon field is equal to null and sets the playerMon to be the Monster class parameter of m that the func is passed,
-    /// the InitializeMonster func of the playerMon Monster class is run to get the monster ready for a new game,
-    /// sets the playerObj to equal the playerMon's gameObject
+    /// Sets the players monster to the monster that the func was passed as a parameter and sets it up for battle.
     /// </summary>
     /// <param name="m"></param>
     public void SetMon(Monster m)
@@ -81,9 +79,7 @@ public class GameManager : MonoBehaviour
         return playerObj;
     }
 
-    /* Loads the overworld and checks the parameter of succes is true, if success is true, 
-     * the battleIndex for every BattleNode in the scene checked for the one with the same value as currBattle, running the CompleteBattle func of that node. 
-     * After the checks are preformed, the currbattle is set to negative -1 which is an inaccessible scene index number and un assigned battleIndex number */
+    /* Loads the overworld and sets the completion status of the battle the player just exited. */
     public void LoadWorld(bool success)
     {
         SceneManager.LoadScene(1);
@@ -101,13 +97,7 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Returns true if all battles are completed by,
-    /// setting a local int of completed to be 0,
-    /// then for every BattleNode component in the scene, given a local identifier of node, 
-    /// a local bool of c is set to be to equal the bool value of each node according to their battleIndex,
-    /// to be used to check the completion status of each node, and if a node is completed the value of the completed int is increased by 1
-    /// if the value of the completed int is equal to the number of battle nodes in the battleNodeTable, this func returns true,
-    /// otherwise if the value of completed doesn't equal the number of battle nodes the func returns false
+    /// Checks the completion status of all of the BattleNode's in the scene to be able to return a true variable when all battles are completed.
     /// </summary>
     /// <returns></returns>
     public static bool QueryCompletion()

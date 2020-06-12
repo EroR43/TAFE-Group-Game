@@ -45,9 +45,7 @@ public class BattleNode : MonoBehaviour
     }
 
     /// <summary>
-    /// This function checks if the completed bool of this node is false and that the players health is above zero, 
-    /// setting the currBattle int in gamemanager to equal the battleIndex of this node, loading the scene with the same build index as the battleIndex value and returning a value of true,
-    /// if one of the conditions is not met, the function will return false
+    /// Loads the battles if the players monster has health and the battle isnt already won.
     /// </summary>
     /// <returns></returns>
     public bool GoToBattle()

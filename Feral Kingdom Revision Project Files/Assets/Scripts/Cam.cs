@@ -34,15 +34,7 @@ public class Cam : MonoBehaviour
 
     //Methods
     /// <summary>
-    /// Within the update function, a local Vector 3 variable is created to house a new set of Vector3 co-ordinates for ease of use.
-    /// The x co-ordinate of the pos Vector is set to the world space position x co-ordinate of the player,
-    /// the z co-ordinate is set to equal the players z world space position co-ordinate with the subtraction of 8,
-    /// the y co-ordinate is set to equal the players y world space position co-ordinate with the addition of the height value.
-    /// With the subtraction of 8 and addition of the height value to the z and y co-ordinates,
-    /// the pos co-ordinates are off set from the true location of the player and places them in a position where the player is visible from a third person viewpoint.
-    /// The world space position of the camera is lastly transformed as a Vector3.SmoothDamp,
-    /// which smoothly moves the posistion of the camera to the new position according to the pos co-ordinates,
-    /// the velocity variable determining how fast the object is currently moving and the smooth variable determining how quickly the movement to the new position should take.
+    /// Updates the cameras position when the player moves and applys offsets and smoothing
     /// </summary>
     void Update()
     {
